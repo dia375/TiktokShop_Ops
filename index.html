@@ -1,0 +1,229 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Dia Wagle for TikTok Shop CAI</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: short-video app feel. Black screen, white type, cyan and pink as thin accents only. Stacked dark cards, a stage ladder for the idea. Single dark look by choice. */
+:root{
+  --bg:#000000;
+  --card:#121212;
+  --card-2:#1a1a1a;
+  --line:#2a2a2a;
+  --ink:#ffffff;
+  --muted:#a1a1a1;
+  --cyan:#25f4ee;
+  --pink:#fe2c55;
+  --sans:"Inter Tight","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.03em;font-weight:800}
+p{margin:0;max-width:62ch}
+.label{font-size:13px;font-weight:600;color:var(--muted);margin:0;letter-spacing:.02em}
+
+.hero{padding-block:72px 48px;display:grid;gap:22px}
+.hero h1{font-size:clamp(46px,9vw,112px);line-height:.92;font-weight:900}
+.hero h1 span{color:var(--muted)}
+.hero .lede{font-size:19px;color:#d4d4d4}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:14px;font-weight:500;padding:8px 14px;border-radius:999px;background:var(--card-2);color:var(--ink);border:1px solid var(--line)}
+
+section{padding-block:44px;display:grid;gap:22px;border-top:1px solid var(--line)}
+section h2{font-size:clamp(30px,4.6vw,48px);line-height:1}
+
+.story{background:var(--card);border-radius:28px;padding:32px;display:grid;gap:14px;border-left:3px solid var(--pink)}
+.story p{font-size:18px;color:#d4d4d4}
+.story p strong{color:var(--ink)}
+
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.num{background:var(--card);border-radius:20px;padding:22px;display:grid;gap:8px;min-width:0;align-content:start;border-bottom:3px solid var(--cyan)}
+.num:nth-child(even){border-bottom-color:var(--pink)}
+.num strong{font-size:clamp(34px,4.4vw,48px);line-height:1;font-weight:900;letter-spacing:-.03em}
+.num span{font-size:14px;color:var(--muted)}
+
+.big-idea{background:var(--ink);color:var(--bg);border-radius:28px;padding:34px;display:grid;gap:12px;position:relative;overflow:hidden}
+.big-idea::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:linear-gradient(var(--cyan),var(--pink))}
+.big-idea .label{color:#555}
+.big-idea h3{font-size:clamp(28px,4.2vw,46px);line-height:1.02}
+.big-idea p{font-size:18px;color:#2a2a2a}
+
+.ladder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.rung{background:var(--card);border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start;min-width:0;border:1px solid var(--line)}
+.rung .stage{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
+.rung:nth-child(2) .stage{color:var(--pink)}
+.rung:nth-child(3) .stage{color:var(--ink)}
+.rung h3{font-size:21px}
+.rung p{color:var(--muted);font-size:15px}
+.rung .campaign{font-size:14px;font-weight:600;color:var(--ink);padding-top:10px;border-top:1px solid var(--line)}
+
+.plan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.step{background:var(--card);border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start;min-width:0}
+.step .label{color:var(--cyan)}
+.step:nth-child(2) .label{color:var(--pink)}
+.step h3{font-size:21px}
+.step ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--muted);font-size:15px}
+.measure{display:flex;flex-wrap:wrap;gap:8px}
+.measure span{font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--card-2);color:var(--ink);border:1px solid var(--line)}
+
+.why{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{background:var(--card);border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start;min-width:0}
+.card h3{font-size:21px}
+.card p{color:var(--muted);font-size:15px}
+.card .proof{font-size:13px;font-weight:600;color:var(--ink);padding-top:10px;border-top:1px solid var(--line)}
+
+footer{margin-block:24px 56px;background:var(--card);border-radius:28px;padding:32px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer h2{font-size:clamp(28px,4.2vw,44px)}
+.contact{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;font-size:15px;font-weight:500}
+.contact span{user-select:all}
+button{font:inherit;font-weight:700;font-size:15px;border:0;border-radius:6px;padding:13px 24px;background:var(--pink);color:var(--ink);cursor:pointer;transition:transform .2s}
+button:hover{transform:translateY(-2px)}
+button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+@media (prefers-reduced-motion:reduce){button{transition:none}}
+@media (max-width:880px){
+  .nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .plan,.why,.ladder{grid-template-columns:1fr}
+}
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="label">Creator Acquisition &amp; Incubation · TikTok Shop · London</p>
+    <h1>Dia Wagle.<br><span>I've been the seller.</span></h1>
+    <p class="lede">I've run my own clothing line, sold digital products and made the content myself. I know how hard the first sale is. I want to help creators get there faster.</p>
+    <div class="chips">
+      <span class="chip">BA Business Management, First Class · Graduated July 2026</span>
+    </div>
+  </header>
+
+  <section aria-labelledby="story">
+    <h2 id="story">Why this team</h2>
+    <div class="story">
+      <p>When I ran my clothing line, I was the founder, the photographer, the editor and the marketer. I learned that <strong>good products don't sell themselves. Good content does.</strong></p>
+      <p>That's why creators matter so much to TikTok Shop, and why CAI is the team I want to be on. I'd love to help creators find their first win, then keep growing.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="nums">
+    <h2 id="nums">What I've done</h2>
+    <div class="nums">
+      <div class="num"><strong>52k+</strong><span>People reached with zero ad spend</span></div>
+      <div class="num"><strong>2x</strong><span>Viewership from Meta ad campaigns I ran</span></div>
+      <div class="num"><strong>68%</strong><span>Community growth, rebuilt from scratch</span></div>
+      <div class="num"><strong>8+</strong><span>European markets in one localised campaign</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="idea">
+    <h2 id="idea">A thought worth exploring</h2>
+    <div class="big-idea">
+      <p class="label">Food for thought · From first post to first sale</p>
+      <h3>Grow creators in stages, with a campaign built for each one.</h3>
+      <p>A creator with zero sales needs something very different from one already selling every week. Grouping creators by stage could make it easier to give each one the right push at the right time.</p>
+    </div>
+    <div class="ladder" aria-label="Creator stages">
+      <article class="rung">
+        <p class="stage">Stage 1 · New</p>
+        <h3>No sales yet</h3>
+        <p>Just joined. Needs confidence and a simple first step.</p>
+        <p class="campaign">Campaign idea: first-sale challenge with easy products to start with</p>
+      </article>
+      <article class="rung">
+        <p class="stage">Stage 2 · Rising</p>
+        <h3>Selling, but not steady</h3>
+        <p>Some sales. Needs consistency and better content.</p>
+        <p class="campaign">Campaign idea: weekly posting goal with content tips from top creators</p>
+      </article>
+      <article class="rung">
+        <p class="stage">Stage 3 · Established</p>
+        <h3>Selling every week</h3>
+        <p>Strong results. Needs scale and bigger brand deals.</p>
+        <p class="campaign">Campaign idea: early access to brand campaigns and LIVE events</p>
+      </article>
+    </div>
+    <div class="plan">
+      <article class="step">
+        <p class="label">Could start</p>
+        <h3>Sort creators by stage</h3>
+        <ul>
+          <li>Pick a few creators in a new market.</li>
+          <li>Group them by sales, posting and activity.</li>
+          <li>Run one campaign per stage.</li>
+        </ul>
+      </article>
+      <article class="step">
+        <p class="label">Could learn</p>
+        <h3>Let the data decide</h3>
+        <ul>
+          <li>Track activity and sales each week.</li>
+          <li>See who moves up a stage and why.</li>
+          <li>Change what isn't working quickly.</li>
+        </ul>
+      </article>
+      <article class="step">
+        <p class="label">Could grow</p>
+        <h3>A simple playbook</h3>
+        <ul>
+          <li>Turn what worked into a stage-by-stage guide.</li>
+          <li>Share it with cross-functional teams.</li>
+          <li>Reuse it for each new market launch.</li>
+        </ul>
+      </article>
+    </div>
+    <div class="measure" aria-label="Metrics that could show if it works">
+      <span>Creator activation rate</span><span>Time to first sale</span><span>Stage progression</span><span>GMV per creator</span><span>Creator retention</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="why">
+    <h2 id="why">Why me</h2>
+    <div class="why">
+      <article class="card">
+        <h3>I've run e-commerce myself</h3>
+        <p>I ran a clothing line and sold digital products online. I've handled the product, the content and the selling, so I understand what creators go through.</p>
+        <p class="proof">Clothing line · Digital products · E-commerce</p>
+      </article>
+      <article class="card">
+        <h3>I've built go-to-market plans</h3>
+        <p>I built the GTM strategy for a £400K pilot, from positioning to pricing to rollout. Launching creators in a new market needs the same kind of plan.</p>
+        <p class="proof">GTM · £400K pilot · Market entry</p>
+      </article>
+      <article class="card">
+        <h3>I can recruit and activate people</h3>
+        <p>I've run outreach on social, calls and email, and turned cold conversations into booked calls. I also rebuilt a community from scratch and grew it 68%.</p>
+        <p class="proof">Outreach · Activation · Community growth</p>
+      </article>
+      <article class="card">
+        <h3>I make decisions from data</h3>
+        <p>I've turned 15+ datasets into clear actions and tracked KPIs to decide what to scale. I also create content and motion graphics, so I know what makes people stop scrolling.</p>
+        <p class="proof">15+ datasets · KPI tracking · Content creation</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Let's grow creators together.</h2>
+    <div class="contact">
+      <span id="email">dia.wagle@gmail.com</span>
+      <span>07355 604005</span>
+      <button type="button" id="copy-email">Copy email</button>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+document.getElementById('copy-email').addEventListener('click', function(){
+  var btn = this, el = document.getElementById('email');
+  function done(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy email'; }, 1600); }
+  function fallback(){ var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected, press copy'; }
+  try { navigator.clipboard.writeText(el.textContent).then(done, fallback); } catch(e){ fallback(); }
+});
+</script>
+
+</body></html>
